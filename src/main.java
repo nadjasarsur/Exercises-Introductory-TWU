@@ -3,7 +3,7 @@
  */
 
 import java.util.Random;
-
+import java.util.ArrayList;
 
 public class main {
 
@@ -42,6 +42,11 @@ public class main {
         FizzBuzz fizzbuzz = new FizzBuzz(100);
         fizzbuzz.fizzBuzz();
 
-        
+        n = rand.nextInt(300)+1;
+        System.out.println("\n\n*** Prime Factors "+n+" ***");
+        PrimeFactors prime  = new PrimeFactors(n);
+        ArrayList primeList = new ArrayList(prime.calculatePrimeFactors());
+        prime.show(primeList);
+
     }
 }
