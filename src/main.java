@@ -15,16 +15,22 @@ public class main {
         Random rand = new Random();
         n = rand.nextInt(9)+1;
         Triangle triangle = new Triangle(n);
-        System.out.println("\t - First exercise:");
+        System.out.println("\t - First exercise (Print Asterisk):");
         triangle.easestExercise();
-        System.out.println("\t - Second exercise: N = "+n);
+        System.out.println("\t - Second exercise (Horizontal Line): N = "+n);
         triangle.horizontalLine(n);
         n = rand.nextInt(9)+1;
-        System.out.println("\t - Third exercise: N = "+n);
+        System.out.println("\t - Third exercise (Vertical Line): N = "+n);
         triangle.verticalLine(n);
         n = rand.nextInt(9)+1;
-        System.out.println("\t - Fourth exercise: N = "+n);
+        System.out.println("\t - Fourth exercise (Right Triangle): N = "+n);
         triangle.rightTriangle(n);
+
+        System.out.println("\n\n*** Diamond Exercises ***");
+        n = rand.nextInt(9)+1;
+        Diamond diamond = new Diamond(n);
+        System.out.println("\t - Fifth exercise (Isosceles): N = "+n);
+        diamond.isosceles(n);
 
     }
 }
