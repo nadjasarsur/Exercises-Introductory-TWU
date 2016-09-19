@@ -31,9 +31,9 @@ public class Diamond {
         }
     }
 
-    public void isoscelesInverted(int n){
-        for (int i = n; i > 1 ; i--){
-            for (int b=0; b<n-i+1; b++){
+    public void isoscelesInverted(int n, int shift){
+        for (int i = n; i > shift ; i--){
+            for (int b=0; b<n-i+shift; b++){
                 System.out.print(" ");
 
             }
@@ -46,6 +46,12 @@ public class Diamond {
 
     public void diamond(int n){
         isosceles(n);
-        isoscelesInverted(n);
+        isoscelesInverted(n,1);
+    }
+
+    public void diamondWithName(int n, String name){
+        isosceles(n-1);
+        System.out.println(name);
+        isoscelesInverted(n,0);
     }
 }

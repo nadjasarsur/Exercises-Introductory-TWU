@@ -34,5 +34,8 @@ public class main {
         n = rand.nextInt(9)+1;
         System.out.println("\t - Sixth exercise (Isosceles): N = "+n);
         diamond.diamond(n);
+        n = rand.nextInt(9)+1;
+        System.out.println("\t - Seventh exercise (Diamond with Name): N = "+n);
+        diamond.diamondWithName(n,"Nadja");
     }
 }
