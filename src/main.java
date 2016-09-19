@@ -37,5 +37,11 @@ public class main {
         n = rand.nextInt(9)+1;
         System.out.println("\t - Seventh exercise (Diamond with Name): N = "+n);
         diamond.diamondWithName(n,"Nadja");
+
+        System.out.println("\n\n*** FizzBuzz Exercises ***");
+        FizzBuzz fizzbuzz = new FizzBuzz(100);
+        fizzbuzz.fizzBuzz();
+
+        
     }
 }
