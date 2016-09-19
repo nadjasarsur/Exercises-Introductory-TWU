@@ -19,7 +19,13 @@ public class Triangle {
     }
 
     public void easestExercise(){
-        System.out.print("*");
+        System.out.println("*");
     }
-    
+
+    public void horizontalLine(int n){
+        for (int i = 0; i < n ; i++){
+            System.out.print("*");
+        }
+
+    }
 }

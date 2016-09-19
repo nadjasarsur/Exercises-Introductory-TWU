@@ -9,9 +9,16 @@ public class main {
 
 
     public static void main(String [] args) {
+        int n;
         System.out.println("Exercises TWU - Introductory programming exercises");
+        System.out.println("*** Triangle Exercises ***");
         Random rand = new Random();
-        Triangle triangle = new Triangle(rand.nextInt(10));
+        n = rand.nextInt(9)+1;
+        Triangle triangle = new Triangle(n);
+        System.out.println("\t - First exercise:");
         triangle.easestExercise();
+        System.out.println("\t - Second exercise: N = "+n);
+        triangle.horizontalLine(n);
+
     }
 }
