@@ -27,10 +27,12 @@ public class main {
         triangle.rightTriangle(n);
 
         System.out.println("\n\n*** Diamond Exercises ***");
-        n = rand.nextInt(9)+1;
         Diamond diamond = new Diamond(n);
+        n = rand.nextInt(9)+1;
         System.out.println("\t - Fifth exercise (Isosceles): N = "+n);
         diamond.isosceles(n);
-
+        n = rand.nextInt(9)+1;
+        System.out.println("\t - Sixth exercise (Isosceles): N = "+n);
+        diamond.diamond(n);
     }
 }

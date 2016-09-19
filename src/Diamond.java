@@ -30,4 +30,22 @@ public class Diamond {
             System.out.println();
         }
     }
+
+    public void isoscelesInverted(int n){
+        for (int i = n; i > 1 ; i--){
+            for (int b=0; b<n-i+1; b++){
+                System.out.print(" ");
+
+            }
+            for (int a = 2; a < i*2-1; a++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public void diamond(int n){
+        isosceles(n);
+        isoscelesInverted(n);
+    }
 }
