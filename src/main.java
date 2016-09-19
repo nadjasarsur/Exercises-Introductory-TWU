@@ -19,6 +19,12 @@ public class main {
         triangle.easestExercise();
         System.out.println("\t - Second exercise: N = "+n);
         triangle.horizontalLine(n);
+        n = rand.nextInt(9)+1;
+        System.out.println("\t - Third exercise: N = "+n);
+        triangle.verticalLine(n);
+        n = rand.nextInt(9)+1;
+        System.out.println("\t - Fourth exercise: N = "+n);
+        triangle.rightTriangle(n);
 
     }
 }

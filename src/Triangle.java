@@ -26,6 +26,22 @@ public class Triangle {
         for (int i = 0; i < n ; i++){
             System.out.print("*");
         }
+        System.out.println();
 
+    }
+
+    public void verticalLine(int n){
+        for (int i = 0; i < n ; i++){
+            System.out.println("*");
+        }
+    }
+
+    public void rightTriangle(int n){
+        for (int i = 0; i < n ; i++){
+            for(int a = 0; a <= i; a++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
